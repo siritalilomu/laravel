@@ -16,12 +16,6 @@ class PostsController extends Controller
       return view('posts.index', compact('posts'));
     }
 
-    // public function show($id)
-    // {
-    //   $post = Post::find($id);
-    //   return view('posts.show', compact('post'));
-    // }
-
     public function show(Post $post)
     {
       return view('posts.show', compact('post'));
@@ -39,17 +33,6 @@ class PostsController extends Controller
         'title' => 'required',
         'body' => 'required'
       ]);
-
-      // Create a new post using the request data
-
-      // dd(request()->all());
-      // dd(request(['title', 'body']));
-      // $post = new Post;
-      // $post->title = request('title');
-      // $post->body = request('body');
-
-      // Save it to the database
-      // $post->save();
 
       Post::create(request(['title', 'body']));
 

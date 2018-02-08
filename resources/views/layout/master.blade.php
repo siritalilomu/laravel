@@ -11,8 +11,7 @@
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
-        <!-- Grid -->
-        <!-- <link href="/css/grid.css" rel="stylesheet"> -->
+        <!-- Bootstrap -->
         <link href="/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom Style Sheet -->
